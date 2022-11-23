@@ -18,17 +18,17 @@ env:
 
 The Slack notification leverages attachments to group important information together and provide valuable links:
 
-<img src="docs/push.png" alt="Screenshot of the push event" width="540">
+![Screenshot of the push event](docs/push.png)
 
 When used with the `pull_request` event, a link to the originating pull request is included:
 
-<img src="docs/pr.png" alt="Screenshot of the pull_request event" width="540">
+![Screenshot of the pull_request event](docs/pr.png)
 
 ### Updating an Existing Message
 
 If you need to send multiple Slack build updates and you prefer to update a single message instead of posting multiple messages, you can pass a `message_id` to future steps.
 
-<img src="docs/updating_message.gif" alt="Updating existing messages" width="540">
+![Updating existing messages](docs/updating_message.gif)
 
 Note: You must assign a step `id` to the first Slack notification step in order to reference it for future steps:
 
